@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <!-- inporting icons from font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>RCV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+
+    <div class="wrapper-outter">
+      <div class="wrapper">
+        <div class="container">
+          <div class="navbar">
+            <div class="nav-items-cont">
+              <div class="burg-cont" onclick="animateBurger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <a class="home-link" href="index.html">
+                <i class="fas fa-home"></i>
+              </a>
+
+              <div class="nav-item">
+                <a class="home-link" href="#">WHAT IS RCV?</a>
+              </div>
+              <div class="nav-item">
+                <a class="home-link" href="#">ELECTIONS & RESULTS</a>
+              </div>
+              <div class="nav-item log-btn">
+                LOGOUT
+              </div>
+              <div class="nav-item user-nav-item">
+                <i class="fas fa-user-circle"></i>
+                BRIAN
+              </div>
+
+            </div>
+
+
+
+            <div class="nav-items-cont">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+    function animateBurger(x) {
+      x.classList.toggle("change");
+    }
+    </script>
+  </body>
+</html>
