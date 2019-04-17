@@ -102,6 +102,10 @@
 
 }
 
+.clearfix{
+  clear: both;
+}
+
 /* styles for burger button  */
 
 .burg-cont{
@@ -137,9 +141,47 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* stuff for the menu lightroom */
+.menu-showbox{
+  position: fixed;
+  left: -100%;
+  top: 45px;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(250,250,250,0.9);
+  display: flex;
+  align-items: center;
+}
 
+.close-showbox-btn{
+  font-size: 40px;
+  font-family: Lato;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
 
+.close-showbox-btn:hover{
+  cursor: pointer;
+}
 
+.showbox-item-cont{
+  margin: 0 auto;
+}
+
+.showbox-nav-item{
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.showbox-nav-item.log-btn, .showbox-nav-item.user-nav-item{
+  float: none;
+  display: block;
+}
 
 
 

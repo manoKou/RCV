@@ -16,7 +16,7 @@
         <div class="container">
           <div class="navbar">
             <div class="nav-items-cont">
-              <div class="burg-cont" onclick="animateBurger(this)">
+              <div class="burg-cont" onclick="animateBurger(this)" id="burger">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -38,12 +38,25 @@
                 <i class="fas fa-user-circle"></i>
                 BRIAN
               </div>
-
+              <div class="clearfix"></div>
             </div>
 
-
-
-            <div class="nav-items-cont">
+            <div class="menu-showbox" id="menu-showbox">
+                <div class="showbox-item-cont">
+                  <div class="showbox-nav-item">
+                    <a class="home-link" href="#">WHAT IS RCV?</a>
+                  </div>
+                  <div class="showbox-nav-item">
+                    <a class="home-link" href="#">ELECTIONS & RESULTS</a>
+                  </div>
+                  <div class="showbox-nav-item log-btn">
+                    LOGOUT
+                  </div>
+                  <div class="showbox-nav-item user-nav-item">
+                    <i class="fas fa-user-circle"></i>
+                    BRIAN
+                  </div>
+                </div>
             </div>
 
           </div>
@@ -55,6 +68,22 @@
     <script>
     function animateBurger(x) {
       x.classList.toggle("change");
+    }
+
+    window.onload = function(){
+      var burger = document.getElementById("burger");
+      var respMenu = document.getElementById("menu-showbox");
+      var open = true;
+      burger.addEventListener("click", function(){
+        console.log("clicked");
+        if (open==false){
+          respMenu.style="left:-100%";
+          open = true;
+        }else if (open==true) {
+          respMenu.style="left:0";
+          open = false;
+        }
+      });
     }
     </script>
   </body>
